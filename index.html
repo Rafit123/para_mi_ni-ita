@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para Ti 💌</title>
+  <style>
+    :root {
+      --rosa: #ff4e7a;
+      --rosa-oscuro: #e8436f;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .background img {
+      flex: 1;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(8px);
+      padding: 40px 30px;
+      border-radius: 20px;
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: var(--rosa);
+      border: none;
+      padding: 12px 25px;
+      color: white;
+      font-size: 1rem;
+      border-radius: 8px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: var(--rosa-oscuro);
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .container {
+        padding: 30px 20px;
+      }
+
+      .background {
+        flex-direction: column;
+      }
+
+      .background img {
+        width: 100%;
+        height: 33.33%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎵 Audio de fondo -->
+  <audio autoplay loop>
+    <source src="audio/y2mate.com - Pablo Alborán  Saturno Lyric Video.mp3" type="audio/mpeg">
+    Tu navegador no soporta el audio.
+  </audio>
+
+  <div class="background">
+    <img src="img/img fabi 1.jpg" alt="Fondo 1">
+    <img src="img/imagen fabi 2.jpg" alt="Fondo 2">
+    <img src="img/img fabi 3.jpg" alt="Fondo 3">
+  </div>
+
+  <div class="overlay">
+    <div class="container">
+      <h1>Para mi persona especial 💖</h1>
+      <p>
+        Este es un pequeño regalito que quería dar a mi niña, para que sepa cuanto la amo! Eres lo mejor que me pasó!.<br>
+        Eres alguien increíble y me siento muy afortunado de tenerte en mi vida, llegaste para salvarme y enseñarme que el amor bonito sí existe. Gracias por todo mi pollito!
+      </p>
+      <p>¡Gracias por existir! 😊</p>
+      <button onclick="window.location.href='galeria.html'">Haz clic aquí</button>
+    </div>
+  </div>
+
+</body>
+</html>
